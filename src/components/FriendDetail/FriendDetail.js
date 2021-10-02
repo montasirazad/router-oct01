@@ -10,7 +10,7 @@ const FriendDetail = () => {
 
 
     const { name, email, phone, website, address, company } = friend
-    console.log(address)
+     
 
 
 
@@ -22,12 +22,12 @@ const FriendDetail = () => {
             .then(res => res.json())
             .then(data => setFriend(data))
 
-    }, [])
+    }, [Id])
     return (
         <div className='App'>
-            <h1>Details</h1>
-            <h2>Details of Id no: {Id}</h2>
-            <h5>{name}</h5>
+            
+            <p>Details of Id no: {Id}</p>
+            <h3>{name}</h3>
             <p>{email}</p>
             <p>{phone}</p>
             <p>{website}</p>
